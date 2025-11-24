@@ -4,7 +4,9 @@ namespace RefactoringHomework
 {
     public class GradeManager
     {
-        public double passingGrade = 50.0;
+        private double passingGrade = 50.0;
+
+        public double PassingGrade { get => passingGrade; set => passingGrade = value; }
 
         public void LogGradeProcessingManager()
         {
@@ -22,7 +24,7 @@ namespace RefactoringHomework
 
 
 
-            if (average >= passingGrade)
+            if (average >= PassingGrade)
             {
                 Console.WriteLine("Status: Pass");
             }
