@@ -2,7 +2,7 @@
 
 namespace RefactoringHomework
 {
-    public class GradeManager
+    public class GradeManager : IGradeManager
     {
         private double passingGrade = 50.0;
 
