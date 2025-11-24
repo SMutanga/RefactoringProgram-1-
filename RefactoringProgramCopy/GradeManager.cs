@@ -17,7 +17,7 @@ namespace RefactoringHomework
 
             double total = CalculateTotal(grades);
 
-            double average = total / grades.Length;
+            double average = CalculateAverage(grades, total);
             Console.WriteLine("Average: " + average);
 
 
@@ -30,6 +30,11 @@ namespace RefactoringHomework
             {
                 Console.WriteLine("Status: Fail");
             }
+        }
+
+        private static double CalculateAverage(double[] grades, double total)
+        {
+            return total / grades.Length;
         }
 
         private static double CalculateTotal(double[] grades)
