@@ -2,7 +2,7 @@
 {
     public interface IGradeManager
     {
-        double calculateFinalGrade(double bonus, double average);
+        double calculateFinalGrade(double average, double bonus);
         void processGrades(string studentName, double[] grades);
     }
 }
