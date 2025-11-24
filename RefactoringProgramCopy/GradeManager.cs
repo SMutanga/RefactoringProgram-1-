@@ -15,10 +15,11 @@ namespace RefactoringHomework
         {
             Console.WriteLine("Processing grades for " + studentName);
 
-            double total = NewMethod(grades);
+            double total = CalculateTotal(grades);
 
             double average = total / grades.Length;
             Console.WriteLine("Average: " + average);
+
 
 
             if (average >= passingGrade)
@@ -31,7 +32,7 @@ namespace RefactoringHomework
             }
         }
 
-        private static double NewMethod(double[] grades)
+        private static double CalculateTotal(double[] grades)
         {
             double total = 0;
             for (int i = 0; i < grades.Length; i++)
@@ -48,4 +49,3 @@ namespace RefactoringHomework
         }
     }
 }
-
